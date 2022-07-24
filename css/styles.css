@@ -75,6 +75,7 @@ body {
 
 /* -----HEADER---- */
 .decorate-header {
+  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 .head-line {
