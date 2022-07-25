@@ -169,6 +169,8 @@ body {
     ),
     url("../image/bg/bgpicture.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-title {
   font-weight: 900;
@@ -226,12 +228,10 @@ body {
   margin-bottom: 10px;
 }
 .quality-block {
-  width: 270px;
+  display: flex;
   height: 120px;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -358,19 +358,14 @@ body {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
   justify-content: center;
   align-items: center;
 }
 
 .client-list-icon {
   fill: inherit;
-  /*  Для второго варианта
   width: 106px;
-  height: 60px; */
+  height: 60px;
 }
 
 .client-link:hover,
@@ -391,6 +386,9 @@ body {
   display: flex;
   align-items: baseline;
 }
+.fblock-left {
+  margin-right: 70px;
+}
 .logo-web-footer {
   padding-top: 0;
   padding-bottom: 0;
@@ -407,7 +405,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 20px;
-  margin-right: 70px;
 }
 .address-item + .address-item {
   margin-top: 9px;
@@ -475,8 +472,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
-
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -505,7 +502,14 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-/* .our-work-img  */
+.our-works-link {
+  display: inline-block;
+}
+.our-works-link:hover,
+.our-works-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio-name {
   font-weight: 700;
@@ -520,5 +524,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--primery-text-color);
 }
 /* ----PORTFOLIO---- */
